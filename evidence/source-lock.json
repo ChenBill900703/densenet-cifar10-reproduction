@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "classification": "EVIDENCE_SOURCE_LOCK_NOT_FORMAL_FREEZE",
+  "evidence_class": "DERIVED",
+  "repository_requirements": {
+    "clean_worktree": true,
+    "detached_head": true,
+    "required_history_not_shallow": true,
+    "git_object_integrity": true,
+    "no_partial_clone_or_missing_objects": true,
+    "locked_default_remote_head": true,
+    "required_cited_commits_present": true
+  },
+  "repositories": [
+    {
+      "path": "sources/DenseNet-official",
+      "remote": "https://github.com/liuzhuang13/DenseNet.git",
+      "commit": "6d4c8da6a1ef750c9116807b98e7c6265f51d762",
+      "remote_head": "e3d24fb44997875f6eddc90dfd605e028d052bad",
+      "required_commits": [
+        "cbb6bff0b4bc8a0eba1f89f60b721e1a264d2afd",
+        "e6c89f2af885184b90272024246a53b155840b11",
+        "4b5cc63ab40caa556c5a8b5d589f53bcb9c1e9b7",
+        "6d4c8da6a1ef750c9116807b98e7c6265f51d762",
+        "e3d24fb44997875f6eddc90dfd605e028d052bad"
+      ]
+    },
+    {
+      "path": "sources/fb.resnet.torch",
+      "remote": "https://github.com/facebook/fb.resnet.torch.git",
+      "commit": "ef12212f88f4988d4b8f0c87fed133f463dc14a8",
+      "remote_head": "985e569d468d23baeef5b952954dcdf3c61c5e73",
+      "required_commits": [
+        "ef12212f88f4988d4b8f0c87fed133f463dc14a8",
+        "985e569d468d23baeef5b952954dcdf3c61c5e73"
+      ]
+    },
+    {
+      "path": "sources/torch-optim",
+      "remote": "https://github.com/torch/optim.git",
+      "commit": "656c42af1f996e4a5d6aae3b9aeac831ca162241",
+      "remote_head": "a5ceed7c21a56d32a36706823e8436741b230d1c",
+      "required_commits": [
+        "656c42af1f996e4a5d6aae3b9aeac831ca162241",
+        "a5ceed7c21a56d32a36706823e8436741b230d1c"
+      ]
+    },
+    {
+      "path": "sources/torch-nn",
+      "remote": "https://github.com/torch/nn.git",
+      "commit": "bae729acce1930aa46be5c6ca0d7272f7eba406e",
+      "remote_head": "872682558c48ee661ebff693aa5a41fcdefa7873",
+      "required_commits": [
+        "bae729acce1930aa46be5c6ca0d7272f7eba406e",
+        "872682558c48ee661ebff693aa5a41fcdefa7873"
+      ]
+    },
+    {
+      "path": "sources/cudnn.torch",
+      "remote": "https://github.com/soumith/cudnn.torch.git",
+      "commit": "008c49de3982119378576fa4244e472a50fd9ebe",
+      "remote_head": "008c49de3982119378576fa4244e472a50fd9ebe",
+      "required_commits": [
+        "008c49de3982119378576fa4244e472a50fd9ebe"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "docs/1608.06993v5.pdf",
+      "path_env": "DENSENET_USER_PAPER_PATH",
+      "sha256": "B55AA1ADBDF07F731DAA84B94D23103D1EB22D1821A556B80212DEBEE69B096D"
+    },
+    {
+      "path": "sources/papers/DenseNet_CVPR2017.pdf",
+      "sha256": "94D6252E5508EB047BE64BBC7BD095A46064D0B51FC73206D9591578477AAEE1"
+    },
+    {
+      "path": "sources/DenseNet-official/models/densenet.lua",
+      "sha256": "5C9177DC0E6293E004C87F093BD69FCB76F189959472E143FE6F026EE3651DBC"
+    },
+    {
+      "path": "sources/DenseNet-official/models/DenseConnectLayer.lua",
+      "sha256": "A9CB7EFC2AED4A1C0A3319E6E9FF8036B91E12DB263F69F3214D2FCDF96E0688"
+    },
+    {
+      "path": "sources/DenseNet-official/train.lua",
+      "sha256": "DBEE340F5759A16BCA97CEA3258EE815E69B522E47C4D78DB704288CF3C9F83F"
+    },
+    {
+      "path": "sources/DenseNet-official/main.lua",
+      "sha256": "62BE35DFAF63FE02ED33266F5AE6667F33E90A1CD709FB9A49BA4C601B34DAEF"
+    },
+    {
+      "path": "sources/DenseNet-official/opts.lua",
+      "sha256": "50F8DF279B70EE314220063481D188C421EFDD33B8ED81A0572C97E05696A693"
+    },
+    {
+      "path": "sources/DenseNet-official/dataloader.lua",
+      "sha256": "655436B96CB712C5EDECB1AE51DBA0ACF11FC91FDCFFA7DCF0DE354C71B74780"
+    },
+    {
+      "path": "sources/DenseNet-official/datasets/cifar10.lua",
+      "sha256": "77231391FF85890452B18368089658BC773CF463ADA69F4B7A9A413C9063F507"
+    },
+    {
+      "path": "sources/DenseNet-official/datasets/cifar10-gen.lua",
+      "sha256": "923658EB03D2D2D0CEE45CE2A5254DC0EB505E3BF1A35F7F4E18B6F8DAE8822F"
+    },
+    {
+      "path": "sources/DenseNet-official/datasets/init.lua",
+      "sha256": "7263F1705577908AE997980905994877A904146E996B319EE895F6684D11D4F0"
+    },
+    {
+      "path": "sources/DenseNet-official/datasets/cifar100.lua",
+      "sha256": "A725FD09F116549A4D81E12299DCD51BABFFD33136750414E36DC384E6D5C769"
+    },
+    {
+      "path": "sources/DenseNet-official/datasets/transforms.lua",
+      "sha256": "20692519D9029E7E4CB87C32AF7910D4A221CE4A2D313A7C3423E1943A0C6C27"
+    },
+    {
+      "path": "sources/torch-optim/sgd.lua",
+      "sha256": "B9A094B0545E2F081C475513A0F47ACDB8BDA227C1C310FDE5806A37E1276FF0"
+    },
+    {
+      "path": "sources/torch-nn/Linear.lua",
+      "sha256": "68F66F41B4FE3E3D3BADE747BE55977B800B4C18E9A5EF11697024EE5C17E431"
+    },
+    {
+      "path": "sources/torch-nn/Dropout.lua",
+      "sha256": "BB229EF355D167C2FA217AC45A91709B9706E1D6B7D85993D91907BF08AD44AF"
+    },
+    {
+      "path": "sources/torch-nn/lib/THNN/generic/BatchNormalization.c",
+      "sha256": "B97B33BA25117F03242B74104032185739A9B3838996CDBF7EA799894DEEE2AE"
+    },
+    {
+      "path": "sources/cudnn.torch/BatchNormalization.lua",
+      "sha256": "FABCE6271B5968A34E5920FE9748151C205A72343F641AC65F47620B30A992BF"
+    },
+    {
+      "path": "sources/cudnn.torch/test/test.lua",
+      "sha256": "586FB6B6BDB7F05F92A56337D01A34F1CD31584E3547F4A8AB06FDD9DC3ACB48"
+    }
+  ]
+}

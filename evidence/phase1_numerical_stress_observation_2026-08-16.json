@@ -1,0 +1,66 @@
+{
+  "classification": "PHASE1-ONE-TIME-INDEPENDENT-NUMERICAL-STRESS-OBSERVATION",
+  "evidence_class": "DERIVED",
+  "record_date": "2026-08-16",
+  "replay_script_committed": false,
+  "scope_note": "Read-only ad hoc reviewer audit; not automatically reproduced by the 47-test suite and not a formal reproduction result.",
+  "dataset_examples_read": 0,
+  "accuracy_evaluations": 0,
+  "optimizer_constructed": false,
+  "optimizer_steps": 0,
+  "trainable_parameter_tensors": 299,
+  "batch_norm_modules": 99,
+  "cpu": {
+    "forward_backward_batch_sizes": [1, 2, 4, 8],
+    "all_logits_losses_gradients_finite": true,
+    "all_trainable_gradients_present": true,
+    "float64_input_and_parameter_gradient_diagnostic_finite": true,
+    "autograd_anomaly_detection_passed": true,
+    "repeated_inference_iterations": 30,
+    "sampled_rss_range_and_final_drift_bytes_after_warmup": 12288
+  },
+  "gpu": {
+    "device": "NVIDIA GeForce RTX 3070 Ti",
+    "torch": "2.12.1+cu130",
+    "torch_cuda_runtime": "13.0",
+    "cudnn": 92000,
+    "forward_backward_batch_sizes": [1, 2, 4, 8],
+    "peak_allocated_memory_bytes_by_batch": {
+      "1": 55569408,
+      "2": 91155456,
+      "4": 162130944,
+      "8": 305720320
+    },
+    "all_logits_losses_gradients_finite": true,
+    "all_trainable_gradients_present": true,
+    "autograd_anomaly_detection_passed": true,
+    "repeated_inference_iterations": 50,
+    "repeated_inference_allocated_bytes_each": 20426752,
+    "repeated_inference_reserved_bytes_each": 50331648,
+    "repeated_backward_iterations": 15,
+    "repeated_backward_allocated_bytes_each": 20427264,
+    "repeated_backward_reserved_bytes_each": 115343360
+  },
+  "batch_norm": {
+    "all_training_statistics_changed": true,
+    "all_counters_advanced_as_expected": true,
+    "evaluation_state_unchanged": true,
+    "repeated_evaluation_bit_exact": true
+  },
+  "state_and_layout": {
+    "stateful_save_reload_exact": true,
+    "missing_and_extra_state_keys_rejected": true,
+    "cpu_gpu_cpu_state_and_cpu_logits_exact": true,
+    "fp32_fp64_fp32_state_exact": true,
+    "identical_value_noncontiguous_input_output_exact": true,
+    "channels_last_changed_low_order_floating_point_values": true,
+    "zero_batch_observation": "Accepted by the current graph and returned shape [0, 10]; observation only, not an evidence-backed defect."
+  },
+  "finite_input_cases_on_cpu_and_gpu": [
+    "zeros",
+    "ones",
+    "bounded_uniform_minus3_to_plus3",
+    "normal_times_10",
+    "normal_times_1000"
+  ]
+}

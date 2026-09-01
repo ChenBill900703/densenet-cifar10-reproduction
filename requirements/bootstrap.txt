@@ -1,0 +1,4 @@
+--index-url https://pypi.org/simple
+
+pip==25.0.1
+setuptools==78.1.0

@@ -1,0 +1,62 @@
+{
+  "accuracy_computed": false,
+  "artifact": {
+    "bytes": 170052171,
+    "md5": "C32A1D4AB5D03F1284B67883E8D87530",
+    "path": "D:\\DenseNet \u2014 Densely Connected Convolutional Networks\\data\\raw\\cifar-10-binary.tar.gz",
+    "sha256": "C4A38C50A1BC5F3A1C5537F2155AB9D68F9F25EB1ED8D9DDDA3DB29A59BCA1DD"
+  },
+  "candidate_h003_mapping": {
+    "approved": false,
+    "batch_size": 64,
+    "epoch": 1,
+    "master_seed": 1021082110,
+    "request_order_and_decisions_sha256": "B60C8F6D6B720736AEF84EA963F4D78CD2693D421283BAEBB8BDB9BD1756E4DD",
+    "stream_derivation": "first 8 SHA256 bytes as big-endian integer, masked to 63 bits",
+    "stream_domain": "densenet-cifar10-loader-v1",
+    "worker_generator_seed": 20260816
+  },
+  "classification": "PHASE2-DATA-PIPELINE-DIAGNOSTIC-NOT-FORMAL-FREEZE",
+  "evidence_class": "DERIVED",
+  "model_constructed": false,
+  "optimizer_constructed": false,
+  "optimizer_steps": 0,
+  "prepared_manifest": {
+    "path": "D:\\DenseNet \u2014 Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin\\prepared-manifest.json",
+    "sha256": "CAB8F516253DBA8ECFEC4E2B8A227B1F0F5A4593D857DE177C81CDDC10FADEB0"
+  },
+  "project_git": {
+    "commit": "5409943f8611d1020befde8e38422952eade12a5",
+    "worktree_clean_before_output": true
+  },
+  "record_date": "2026-08-16",
+  "test_normalization_only_zero_workers": {
+    "batches": 157,
+    "first_batch_size": 64,
+    "last_batch_size": 16,
+    "samples": 10000,
+    "targets_sha256": "F244313CD7CF97CD0712D5531B18E0CF6C2DC5444ABB018A459118F5D6714993",
+    "transformed_images_sha256": "657DD8A0FD8AECCD00213EB1044EBEB8EAC720CE9894976542F7139B0FF3252C"
+  },
+  "torch": {
+    "python_threads": 8,
+    "version": "2.12.1+cu130"
+  },
+  "train_two_workers": {
+    "batches": 782,
+    "first_batch_size": 64,
+    "last_batch_size": 16,
+    "samples": 50000,
+    "targets_sha256": "65D4E969F1E7C1ECD6E79CAF0E675C6999F02BF4DBC00F2B76801AB3B07DF666",
+    "transformed_images_sha256": "4354F39587A47A1DD3120AFCA8002CD3505F8A7BBCA56A1750A8F00485F74965"
+  },
+  "train_zero_workers": {
+    "batches": 782,
+    "first_batch_size": 64,
+    "last_batch_size": 16,
+    "samples": 50000,
+    "targets_sha256": "65D4E969F1E7C1ECD6E79CAF0E675C6999F02BF4DBC00F2B76801AB3B07DF666",
+    "transformed_images_sha256": "4354F39587A47A1DD3120AFCA8002CD3505F8A7BBCA56A1750A8F00485F74965"
+  },
+  "worker_count_bit_exact": true
+}

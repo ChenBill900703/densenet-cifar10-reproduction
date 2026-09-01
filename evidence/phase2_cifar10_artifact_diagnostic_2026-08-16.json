@@ -1,0 +1,205 @@
+{
+  "accuracy_computed": false,
+  "artifacts": {
+    "toronto_binary": {
+      "bytes": 170052171,
+      "md5": "C32A1D4AB5D03F1284B67883E8D87530",
+      "path": "D:\\DenseNet \u2014 Densely Connected Convolutional Networks\\data\\raw\\cifar-10-binary.tar.gz",
+      "sha256": "C4A38C50A1BC5F3A1C5537F2155AB9D68F9F25EB1ED8D9DDDA3DB29A59BCA1DD"
+    },
+    "toronto_python": {
+      "bytes": 170498071,
+      "md5": "C58F30108F718F92721AF3B95E74349A",
+      "path": "D:\\DenseNet \u2014 Densely Connected Convolutional Networks\\data\\raw\\cifar-10-python.tar.gz",
+      "sha256": "6D958BE074577803D12ECDEFD02955F39262C83C16FE9348329D7FE0B5C001CE"
+    }
+  },
+  "batches": [
+    {
+      "byte_exact_between_archives": true,
+      "canonical_label_plus_chw_pixels_sha256": "CEE916563C9F80D84E3CC88E17FDC0941787F1244F00A67874D45B261883ADA5",
+      "class_histogram": [
+        1005,
+        974,
+        1032,
+        1016,
+        999,
+        937,
+        1030,
+        1001,
+        1025,
+        981
+      ],
+      "name": "data_batch_1",
+      "records": 10000
+    },
+    {
+      "byte_exact_between_archives": true,
+      "canonical_label_plus_chw_pixels_sha256": "A591CA11FA1708A91EE40F54B3DA4784CCD871ECF2137DE63F51ADA8B3FA57ED",
+      "class_histogram": [
+        984,
+        1007,
+        1010,
+        995,
+        1010,
+        988,
+        1008,
+        1026,
+        987,
+        985
+      ],
+      "name": "data_batch_2",
+      "records": 10000
+    },
+    {
+      "byte_exact_between_archives": true,
+      "canonical_label_plus_chw_pixels_sha256": "BBE8596564C0F86427F876058170B84DAC6670DDF06D79402899D93CEEA26F67",
+      "class_histogram": [
+        994,
+        1042,
+        965,
+        997,
+        990,
+        1029,
+        978,
+        1015,
+        961,
+        1029
+      ],
+      "name": "data_batch_3",
+      "records": 10000
+    },
+    {
+      "byte_exact_between_archives": true,
+      "canonical_label_plus_chw_pixels_sha256": "014E562D6E23C72197CC727519169A60359F5ECCD8945AD5A09D710285FF4E48",
+      "class_histogram": [
+        1003,
+        963,
+        1041,
+        976,
+        1004,
+        1021,
+        1004,
+        981,
+        1024,
+        983
+      ],
+      "name": "data_batch_4",
+      "records": 10000
+    },
+    {
+      "byte_exact_between_archives": true,
+      "canonical_label_plus_chw_pixels_sha256": "755304FC0B379CAEAE8C14F0DAC912FBC7D6CD469EB67A1029A08A39453A9ADD",
+      "class_histogram": [
+        1014,
+        1014,
+        952,
+        1016,
+        997,
+        1025,
+        980,
+        977,
+        1003,
+        1022
+      ],
+      "name": "data_batch_5",
+      "records": 10000
+    },
+    {
+      "byte_exact_between_archives": true,
+      "canonical_label_plus_chw_pixels_sha256": "8E2EB146AE340B09E24670F29CABC6326DBA54DA8789DAB6768ACF480273F65B",
+      "class_histogram": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "name": "test_batch",
+      "records": 10000
+    }
+  ],
+  "classification": "PHASE2-CIFAR10-ARTIFACT-DIAGNOSTIC-NOT-FORMAL-FREEZE",
+  "evidence_class": "DERIVED",
+  "historical_torch7_archive": {
+    "access_observation": {
+      "date": "2026-08-16",
+      "evidence_class": "DERIVED",
+      "http_status": 403,
+      "method": "curl.exe -I"
+    },
+    "bytes": "UNKNOWN",
+    "md5": "UNKNOWN",
+    "role": "archive named by the pinned DenseNet official runner",
+    "semantic_equivalence_to_toronto": "UNKNOWN",
+    "sha256": "UNKNOWN",
+    "url": "http://torch7.s3-website-us-east-1.amazonaws.com/data/cifar-10-torch.tar.gz",
+    "url_evidence_class": "OFFICIAL-CODE-SPECIFIED"
+  },
+  "optimizer_constructed": false,
+  "optimizer_steps": 0,
+  "project_git": {
+    "commit": "b2cd18b4a5d8e8166426da42649e1e318d7e1d44",
+    "worktree_clean_before_output": true
+  },
+  "record_date": "2026-08-16",
+  "semantic_equivalence": {
+    "all_60000_labels_and_images_byte_exact": true,
+    "binary_metadata_terminal_blank_lines": 1,
+    "canonical_record_layout": "uint8 label 0..9 followed by 3072 CHW row-major uint8 pixels",
+    "class_names": [
+      "airplane",
+      "automobile",
+      "bird",
+      "cat",
+      "deer",
+      "dog",
+      "frog",
+      "horse",
+      "ship",
+      "truck"
+    ],
+    "class_names_semantically_equal": true,
+    "metadata_byte_exact": false,
+    "metadata_difference": "binary batches.meta.txt contains a terminal blank line absent from Python label_names"
+  },
+  "splits": {
+    "test": {
+      "canonical_label_plus_chw_pixels_sha256": "8E2EB146AE340B09E24670F29CABC6326DBA54DA8789DAB6768ACF480273F65B",
+      "class_histogram": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "records": 10000
+    },
+    "train": {
+      "canonical_label_plus_chw_pixels_sha256": "A0181DA372C0D63A5920FDBEA2EC3F83ECBC552D378218E1CB473CF634941A3B",
+      "class_histogram": [
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000
+      ],
+      "records": 50000
+    }
+  }
+}

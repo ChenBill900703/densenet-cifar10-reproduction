@@ -1,0 +1,24 @@
+# Paper / Official Code Conflict Register
+
+Status: **D-057 completed the superseding three-seed formal execution and aggregate; D-058 completed the primary-evidence comparison; D-059 completed the defense artifacts. Original conflicts remain visible even where a human-approved frozen policy resolved them for this target. Older freezes and abandoned namespaces remain immutable history and do not contribute to the result.**
+
+| ID | Setting | Paper | Official code | Historical dependency | Interpretation / impact | Decision status | Human approval required? |
+|---|---|---|---|---|---|---|---|
+| C-001 | CIFAR test cadence and model selection | PDF p.5 says final run uses all 50k training images and reports final test error at end; p.6 says test errors were evaluated only once per task/model setting. | `main.lua:50-65` tests every epoch, tracks lowest test error, saves `model_best.t7`; `main.lua:68` prints the best error. | N/A | Direct test leakage and a different result-selection rule. Formal reproduction cannot use the runner unchanged. | `RESOLVED FOR CURRENT TARGET 2026-08-16 - PAPER POLICY SELECTED` | **Completed** |
+| C-002 | CIFAR default epochs and batch size | PDF p.5 specifies batch 64 and 300 epochs. | `opts.lua:32-34` defaults epochs 0/batch 32; `opts.lua:94-101` maps CIFAR default epochs to 164. The official README `:72-75` explicitly supplies batch 64 and 300 epochs. | N/A | The documented command resolves the intended run, but invoking defaults silently violates the paper. Frozen config must be explicit. | `RESOLVABLE AT FREEZE` | Yes, as part of config approval |
+| C-003 | Initial channels for **basic** DenseNet | PDF p.4 says 16 channels before block 1 for non-BC. | First public code `cbb6bff...:densenet.lua:19-21` uses 16. Pinned later unified code `models/densenet.lua:14-15` always uses `2k`, including when bottleneck is disabled. | N/A | For basic `k=12/24`, the late runner produces 24/48 channels and no longer matches the paper. This does not affect a BC target. | `HIGH - UNRESOLVED FOR BASIC TARGETS` | **Yes** if a basic target is selected |
+| C-004 | No-augmentation Dropout with custom memory mode | PDF pp.5-6: no-augmentation runs use dropout 0.2 after every convolution except the first. | Standard layer applies dropout after bottleneck and 3x3 conv (`DenseConnectLayer.lua:20-28`), and transitions apply it (`models/densenet.lua:48-50`). Custom layer used for `optMemory>=3` has no dropout operations (`DenseConnectLayer.lua:46-58`). | Torch `nn.Dropout` candidate confirms inverted train-time dropout and disabled eval behavior. | A no-augmentation target with custom memory mode violates the paper. Augmented targets use dropout 0 and are unaffected. | `HIGH - TARGET-CONDITIONAL` | Yes if no-augmentation target or custom memory mode is considered |
+| C-005 | Classifier initialization scope | PDF p.5 says the initialization of He et al. [10] is adopted, without layer-by-layer scope. | `models/densenet.lua:137-162` applies zero-mean normal `sqrt(2/fan_out)` only to convolutions, sets BN gamma/beta to 1/0, zeros Linear bias, and leaves Linear weight at `nn.Linear` constructor default. | `torch-nn/Linear.lua:21-40` candidate uses uniform `±1/sqrt(fan_in)`. He et al. supports fan-in or fan-out normal for rectified layers, but the classifier has no ReLU after it. | Official behavior is precise, but the paper's broad wording could be read more generally. Initialization is trajectory-changing. | `RESOLVED FOR CURRENT TARGET 2026-08-16 - HISTORICAL LINEAR DEFAULT ADOPTED` | **Completed** |
+| C-006 | cuDNN algorithm determinism | Paper: `UNKNOWN`. | `opts.lua:25-26` defaults `cudnn=fastest`; `models/init.lua:89-98` enables fastest/benchmark or offers a deterministic mode. | Exact cuDNN build was not pinned. | Protocol fidelity to defaults conflicts with the project's desire for deterministic replay. | `RESOLVED FOR CURRENT TARGET 2026-08-16 - DETERMINISTIC PROJECT POLICY SELECTED` | **Completed** |
+
+## Non-conflicts worth guarding
+
+- Compression rounding is consistent: paper p.4 specifies `floor(theta*m)` and code uses `math.floor` (`models/densenet.lua:74-80`).
+- The paper's He initialization citation is compatible with the code's fan-out normal for convolution: He et al. derives both forward fan-in and backward fan-out forms. The open issue is the classifier, not the convolution formula.
+- For an augmented DenseNet-BC target, paper and code both imply dropout 0.
+
+## Approved-target impact
+
+- Selecting DenseNet-BC-100-12 avoids the basic-model initial-channel conflict `C-003`.
+- Selecting CIFAR-10+ implies dropout 0 and therefore avoids the no-augmentation/custom-memory conflict `C-004` for the approved target.
+- Human decisions resolved `C-001`, `C-005`, and `C-006` for the current target while preserving their historical conflicts. None is Phase 5 frozen.

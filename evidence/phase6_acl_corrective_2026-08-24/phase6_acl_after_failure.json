@@ -1,0 +1,893 @@
+{
+  "classification": "PHASE6-PREFLIGHT-ACL-CORRECTIVE-EVIDENCE-V1",
+  "evidence_class": "DERIVED",
+  "stage": "AFTER-FAILED-INHERITANCE-DRIFT",
+  "target": "D:\\DenseNet — Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin",
+  "current_account": "<REDACTED_SANDBOX_ACCOUNT>",
+  "current_sid": "<REDACTED_SANDBOX_SID>",
+  "files": [
+    {
+      "name": "data_batch_1.bin",
+      "bytes": 30730000,
+      "sha256": "CEE916563C9F80D84E3CC88E17FDC0941787F1244F00A67874D45B261883ADA5"
+    },
+    {
+      "name": "data_batch_2.bin",
+      "bytes": 30730000,
+      "sha256": "A591CA11FA1708A91EE40F54B3DA4784CCD871ECF2137DE63F51ADA8B3FA57ED"
+    },
+    {
+      "name": "data_batch_3.bin",
+      "bytes": 30730000,
+      "sha256": "BBE8596564C0F86427F876058170B84DAC6670DDF06D79402899D93CEEA26F67"
+    },
+    {
+      "name": "data_batch_4.bin",
+      "bytes": 30730000,
+      "sha256": "014E562D6E23C72197CC727519169A60359F5ECCD8945AD5A09D710285FF4E48"
+    },
+    {
+      "name": "data_batch_5.bin",
+      "bytes": 30730000,
+      "sha256": "755304FC0B379CAEAE8C14F0DAC912FBC7D6CD469EB67A1029A08A39453A9ADD"
+    },
+    {
+      "name": "test_batch.bin",
+      "bytes": 30730000,
+      "sha256": "8E2EB146AE340B09E24670F29CABC6326DBA54DA8789DAB6768ACF480273F65B"
+    },
+    {
+      "name": "prepared-manifest.json",
+      "bytes": 1152,
+      "sha256": "CAB8F516253DBA8ECFEC4E2B8A227B1F0F5A4593D857DE177C81CDDC10FADEB0"
+    }
+  ],
+  "descriptors": [
+    {
+      "path": "D:\\DenseNet — Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin",
+      "owner": "<REDACTED_SANDBOX_ACCOUNT>",
+      "protected": false,
+      "sddl": "O:<REDACTED_SANDBOX_SID>G:<REDACTED_DOMAIN_USERS_SID>D:AI(A;OICI;FA;;;OW)(A;OICI;FA;;;SY)(A;OICI;FA;;;BA)(A;OICI;0x1200a9;;;<REDACTED_EXECUTION_SID>)(A;OICIID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_B>)(A;OICIID;0x1301bf;;;<REDACTED_LOCAL_ACCOUNT_SID>)(A;OICIID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_A>)(A;ID;FA;;;BA)(A;OICIIOID;GA;;;BA)(A;ID;FA;;;SY)(A;OICIIOID;GA;;;SY)(A;ID;0x1301bf;;;AU)(A;OICIIOID;SDGXGWGR;;;AU)(A;ID;0x1200a9;;;BU)(A;OICIIOID;GXGR;;;BU)",
+      "access": [
+        {
+          "identity": "OWNER RIGHTS",
+          "sid": "<REDACTED_OWNER_RIGHTS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "None",
+          "inherited": false
+        },
+        {
+          "identity": "NT AUTHORITY\\SYSTEM",
+          "sid": "<REDACTED_LOCAL_SYSTEM_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "None",
+          "inherited": false
+        },
+        {
+          "identity": "BUILTIN\\Administrators",
+          "sid": "<REDACTED_ADMINISTRATORS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "None",
+          "inherited": false
+        },
+        {
+          "identity": "<REDACTED_EXECUTION_ACCOUNT>",
+          "sid": "<REDACTED_EXECUTION_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "None",
+          "inherited": false
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_HOST>\\CodexSandboxUsers",
+          "sid": "<REDACTED_LOCAL_ACCOUNT_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Administrators",
+          "sid": "<REDACTED_ADMINISTRATORS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Administrators",
+          "sid": "<REDACTED_ADMINISTRATORS_SID>",
+          "access_control_type": "Allow",
+          "rights": "268435456",
+          "rights_value": 268435456,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "InheritOnly",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\SYSTEM",
+          "sid": "<REDACTED_LOCAL_SYSTEM_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\SYSTEM",
+          "sid": "<REDACTED_LOCAL_SYSTEM_SID>",
+          "access_control_type": "Allow",
+          "rights": "268435456",
+          "rights_value": 268435456,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "InheritOnly",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\Authenticated Users",
+          "sid": "<REDACTED_AUTHENTICATED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\Authenticated Users",
+          "sid": "<REDACTED_AUTHENTICATED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "-536805376",
+          "rights_value": -536805376,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "InheritOnly",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Users",
+          "sid": "<REDACTED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Users",
+          "sid": "<REDACTED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "-1610612736",
+          "rights_value": -1610612736,
+          "inheritance_flags": "ContainerInherit, ObjectInherit",
+          "propagation_flags": "InheritOnly",
+          "inherited": true
+        }
+      ]
+    },
+    {
+      "path": "D:\\DenseNet — Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin\\data_batch_1.bin",
+      "owner": "<REDACTED_SANDBOX_ACCOUNT>",
+      "protected": false,
+      "sddl": "O:<REDACTED_SANDBOX_SID>G:<REDACTED_DOMAIN_USERS_SID>D:AI(A;ID;0x1200a9;;;<REDACTED_EXECUTION_SID>)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;FA;;;OW)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_B>)(A;ID;0x1301bf;;;<REDACTED_LOCAL_ACCOUNT_SID>)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_A>)(A;ID;0x1301bf;;;AU)(A;ID;0x1200a9;;;BU)",
+      "access": [
+        {
+          "identity": "<REDACTED_EXECUTION_ACCOUNT>",
+          "sid": "<REDACTED_EXECUTION_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\SYSTEM",
+          "sid": "<REDACTED_LOCAL_SYSTEM_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Administrators",
+          "sid": "<REDACTED_ADMINISTRATORS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "OWNER RIGHTS",
+          "sid": "<REDACTED_OWNER_RIGHTS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_HOST>\\CodexSandboxUsers",
+          "sid": "<REDACTED_LOCAL_ACCOUNT_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\Authenticated Users",
+          "sid": "<REDACTED_AUTHENTICATED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Users",
+          "sid": "<REDACTED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        }
+      ]
+    },
+    {
+      "path": "D:\\DenseNet — Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin\\data_batch_2.bin",
+      "owner": "<REDACTED_SANDBOX_ACCOUNT>",
+      "protected": false,
+      "sddl": "O:<REDACTED_SANDBOX_SID>G:<REDACTED_DOMAIN_USERS_SID>D:AI(A;ID;0x1200a9;;;<REDACTED_EXECUTION_SID>)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;FA;;;OW)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_B>)(A;ID;0x1301bf;;;<REDACTED_LOCAL_ACCOUNT_SID>)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_A>)(A;ID;0x1301bf;;;AU)(A;ID;0x1200a9;;;BU)",
+      "access": [
+        {
+          "identity": "<REDACTED_EXECUTION_ACCOUNT>",
+          "sid": "<REDACTED_EXECUTION_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\SYSTEM",
+          "sid": "<REDACTED_LOCAL_SYSTEM_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Administrators",
+          "sid": "<REDACTED_ADMINISTRATORS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "OWNER RIGHTS",
+          "sid": "<REDACTED_OWNER_RIGHTS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_HOST>\\CodexSandboxUsers",
+          "sid": "<REDACTED_LOCAL_ACCOUNT_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\Authenticated Users",
+          "sid": "<REDACTED_AUTHENTICATED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Users",
+          "sid": "<REDACTED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        }
+      ]
+    },
+    {
+      "path": "D:\\DenseNet — Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin\\data_batch_3.bin",
+      "owner": "<REDACTED_SANDBOX_ACCOUNT>",
+      "protected": false,
+      "sddl": "O:<REDACTED_SANDBOX_SID>G:<REDACTED_DOMAIN_USERS_SID>D:AI(A;ID;0x1200a9;;;<REDACTED_EXECUTION_SID>)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;FA;;;OW)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_B>)(A;ID;0x1301bf;;;<REDACTED_LOCAL_ACCOUNT_SID>)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_A>)(A;ID;0x1301bf;;;AU)(A;ID;0x1200a9;;;BU)",
+      "access": [
+        {
+          "identity": "<REDACTED_EXECUTION_ACCOUNT>",
+          "sid": "<REDACTED_EXECUTION_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\SYSTEM",
+          "sid": "<REDACTED_LOCAL_SYSTEM_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Administrators",
+          "sid": "<REDACTED_ADMINISTRATORS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "OWNER RIGHTS",
+          "sid": "<REDACTED_OWNER_RIGHTS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_HOST>\\CodexSandboxUsers",
+          "sid": "<REDACTED_LOCAL_ACCOUNT_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\Authenticated Users",
+          "sid": "<REDACTED_AUTHENTICATED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Users",
+          "sid": "<REDACTED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        }
+      ]
+    },
+    {
+      "path": "D:\\DenseNet — Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin\\data_batch_4.bin",
+      "owner": "<REDACTED_SANDBOX_ACCOUNT>",
+      "protected": false,
+      "sddl": "O:<REDACTED_SANDBOX_SID>G:<REDACTED_DOMAIN_USERS_SID>D:AI(A;ID;0x1200a9;;;<REDACTED_EXECUTION_SID>)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;FA;;;OW)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_B>)(A;ID;0x1301bf;;;<REDACTED_LOCAL_ACCOUNT_SID>)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_A>)(A;ID;0x1301bf;;;AU)(A;ID;0x1200a9;;;BU)",
+      "access": [
+        {
+          "identity": "<REDACTED_EXECUTION_ACCOUNT>",
+          "sid": "<REDACTED_EXECUTION_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\SYSTEM",
+          "sid": "<REDACTED_LOCAL_SYSTEM_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Administrators",
+          "sid": "<REDACTED_ADMINISTRATORS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "OWNER RIGHTS",
+          "sid": "<REDACTED_OWNER_RIGHTS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_HOST>\\CodexSandboxUsers",
+          "sid": "<REDACTED_LOCAL_ACCOUNT_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\Authenticated Users",
+          "sid": "<REDACTED_AUTHENTICATED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Users",
+          "sid": "<REDACTED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        }
+      ]
+    },
+    {
+      "path": "D:\\DenseNet — Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin\\data_batch_5.bin",
+      "owner": "<REDACTED_SANDBOX_ACCOUNT>",
+      "protected": false,
+      "sddl": "O:<REDACTED_SANDBOX_SID>G:<REDACTED_DOMAIN_USERS_SID>D:AI(A;ID;0x1200a9;;;<REDACTED_EXECUTION_SID>)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;FA;;;OW)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_B>)(A;ID;0x1301bf;;;<REDACTED_LOCAL_ACCOUNT_SID>)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_A>)(A;ID;0x1301bf;;;AU)(A;ID;0x1200a9;;;BU)",
+      "access": [
+        {
+          "identity": "<REDACTED_EXECUTION_ACCOUNT>",
+          "sid": "<REDACTED_EXECUTION_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\SYSTEM",
+          "sid": "<REDACTED_LOCAL_SYSTEM_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Administrators",
+          "sid": "<REDACTED_ADMINISTRATORS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "OWNER RIGHTS",
+          "sid": "<REDACTED_OWNER_RIGHTS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_HOST>\\CodexSandboxUsers",
+          "sid": "<REDACTED_LOCAL_ACCOUNT_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\Authenticated Users",
+          "sid": "<REDACTED_AUTHENTICATED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Users",
+          "sid": "<REDACTED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        }
+      ]
+    },
+    {
+      "path": "D:\\DenseNet — Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin\\test_batch.bin",
+      "owner": "<REDACTED_SANDBOX_ACCOUNT>",
+      "protected": false,
+      "sddl": "O:<REDACTED_SANDBOX_SID>G:<REDACTED_DOMAIN_USERS_SID>D:AI(A;ID;0x1200a9;;;<REDACTED_EXECUTION_SID>)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;FA;;;OW)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_B>)(A;ID;0x1301bf;;;<REDACTED_LOCAL_ACCOUNT_SID>)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_A>)(A;ID;0x1301bf;;;AU)(A;ID;0x1200a9;;;BU)",
+      "access": [
+        {
+          "identity": "<REDACTED_EXECUTION_ACCOUNT>",
+          "sid": "<REDACTED_EXECUTION_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\SYSTEM",
+          "sid": "<REDACTED_LOCAL_SYSTEM_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Administrators",
+          "sid": "<REDACTED_ADMINISTRATORS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "OWNER RIGHTS",
+          "sid": "<REDACTED_OWNER_RIGHTS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_HOST>\\CodexSandboxUsers",
+          "sid": "<REDACTED_LOCAL_ACCOUNT_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\Authenticated Users",
+          "sid": "<REDACTED_AUTHENTICATED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Users",
+          "sid": "<REDACTED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        }
+      ]
+    },
+    {
+      "path": "D:\\DenseNet — Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin\\prepared-manifest.json",
+      "owner": "<REDACTED_SANDBOX_ACCOUNT>",
+      "protected": false,
+      "sddl": "O:<REDACTED_SANDBOX_SID>G:<REDACTED_DOMAIN_USERS_SID>D:AI(A;ID;0x1200a9;;;<REDACTED_EXECUTION_SID>)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;FA;;;OW)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_B>)(A;ID;0x1301bf;;;<REDACTED_LOCAL_ACCOUNT_SID>)(A;ID;0x1301bf;;;<REDACTED_CLOUD_ACCOUNT_SID_A>)(A;ID;0x1301bf;;;AU)(A;ID;0x1200a9;;;BU)",
+      "access": [
+        {
+          "identity": "<REDACTED_EXECUTION_ACCOUNT>",
+          "sid": "<REDACTED_EXECUTION_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\SYSTEM",
+          "sid": "<REDACTED_LOCAL_SYSTEM_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Administrators",
+          "sid": "<REDACTED_ADMINISTRATORS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "OWNER RIGHTS",
+          "sid": "<REDACTED_OWNER_RIGHTS_SID>",
+          "access_control_type": "Allow",
+          "rights": "FullControl",
+          "rights_value": 2032127,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_B>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_HOST>\\CodexSandboxUsers",
+          "sid": "<REDACTED_LOCAL_ACCOUNT_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "sid": "<REDACTED_CLOUD_ACCOUNT_SID_A>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "NT AUTHORITY\\Authenticated Users",
+          "sid": "<REDACTED_AUTHENTICATED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "Modify, Synchronize",
+          "rights_value": 1245631,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        },
+        {
+          "identity": "BUILTIN\\Users",
+          "sid": "<REDACTED_USERS_SID>",
+          "access_control_type": "Allow",
+          "rights": "ReadAndExecute, Synchronize",
+          "rights_value": 1179817,
+          "inheritance_flags": "None",
+          "propagation_flags": "None",
+          "inherited": true
+        }
+      ]
+    }
+  ],
+  "formal_optimizer_calls": 0,
+  "data_bytes_changed": false
+}

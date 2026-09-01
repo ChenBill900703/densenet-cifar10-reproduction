@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "classification": "PHASE2-CIFAR10-APPROVED-ARTIFACT-LOCK",
+  "evidence_class": "DERIVED",
+  "record_date": "2026-08-16",
+  "selection_decision_date": "2026-08-23",
+  "formal_dataset_selected": true,
+  "selection_status": "A-007/H-001/M-001 HUMAN-APPROVED 2026-08-23; NOT PHASE 5 FROZEN",
+  "artifacts": {
+    "toronto_python": {
+      "role": "approved semantic-equivalence evidence only; not a formal input",
+      "selection_evidence_class": "IMPLEMENTATION-ASSUMPTION",
+      "approved": false,
+      "url": "https://cave.cs.toronto.edu/kriz/cifar-10-python.tar.gz",
+      "bytes": 170498071,
+      "md5": "C58F30108F718F92721AF3B95E74349A",
+      "sha256": "6D958BE074577803D12ECDEFD02955F39262C83C16FE9348329D7FE0B5C001CE",
+      "digest_evidence_class": "DERIVED"
+    },
+    "toronto_binary": {
+      "role": "sole human-approved formal dataset artifact; not Phase 5 frozen",
+      "selection_evidence_class": "IMPLEMENTATION-ASSUMPTION",
+      "approved": true,
+      "url": "https://cave.cs.toronto.edu/kriz/cifar-10-binary.tar.gz",
+      "bytes": 170052171,
+      "md5": "C32A1D4AB5D03F1284B67883E8D87530",
+      "sha256": "C4A38C50A1BC5F3A1C5537F2155AB9D68F9F25EB1ED8D9DDDA3DB29A59BCA1DD",
+      "digest_evidence_class": "DERIVED"
+    },
+    "historical_torch7": {
+      "role": "archive named by the pinned DenseNet official runner",
+      "url_evidence_class": "OFFICIAL-CODE-SPECIFIED",
+      "url": "http://torch7.s3-website-us-east-1.amazonaws.com/data/cifar-10-torch.tar.gz",
+      "access_observation": {
+        "date": "2026-08-16",
+        "method": "curl.exe -I",
+        "http_status": 403,
+        "evidence_class": "DERIVED"
+      },
+      "bytes": "UNKNOWN",
+      "md5": "UNKNOWN",
+      "sha256": "UNKNOWN",
+      "semantic_equivalence_to_toronto": "UNKNOWN"
+    }
+  }
+}

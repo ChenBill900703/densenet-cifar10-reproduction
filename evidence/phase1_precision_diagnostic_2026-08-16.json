@@ -1,0 +1,58 @@
+{
+  "classification": "PHASE1-PRECISION-DIAGNOSTIC-ONLY",
+  "evidence_class": "DERIVED",
+  "comparisons": {
+    "cuda_ieee_vs_cpu": {
+      "denominator_floor": 1.0,
+      "denominator_used": 395162.1875,
+      "elements": 30,
+      "max_absolute_error": 1.15625,
+      "reference_max_absolute_value": 395162.1875,
+      "relative_infinity_error": 2.9260137649177276e-06
+    },
+    "cuda_tf32_vs_cpu": {
+      "denominator_floor": 1.0,
+      "denominator_used": 395162.1875,
+      "elements": 30,
+      "max_absolute_error": 157.625,
+      "reference_max_absolute_value": 395162.1875,
+      "relative_infinity_error": 0.00039888684946608156
+    },
+    "cuda_tf32_vs_cuda_ieee": {
+      "denominator_floor": 1.0,
+      "denominator_used": 395161.03125,
+      "elements": 30,
+      "max_absolute_error": 158.5,
+      "reference_max_absolute_value": 395161.03125,
+      "relative_infinity_error": 0.00040110230378390837
+    }
+  },
+  "cudnn": 92000,
+  "device": "NVIDIA GeForce RTX 3070 Ti",
+  "compute_capability": "8.6",
+  "diagnostic_matmul_fp32_precision": "ieee",
+  "initial_state_sha256": "B94542055A395E7AA7A0041E111F840ACA49AF0EA34193210BF7038F00D0FF2A",
+  "input_shape": [3, 3, 32, 32],
+  "input_test_seed": 28001,
+  "logit_elements_per_output": 30,
+  "model_test_seed": 28000,
+  "observed_process_defaults": {
+    "cudnn_convolution_fp32_precision": "tf32",
+    "matmul_fp32_precision": "none",
+    "deterministic_algorithms": false,
+    "cudnn_enabled": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false
+  },
+  "optimizer_constructed": false,
+  "optimizer_steps": 0,
+  "output_raw_sha256": {
+    "cpu": "C71E6E149703DFA2593AA16DAE7D4307DD5E6AB3808C53481DA3FD21ABB5FA57",
+    "cuda_ieee_convolution": "8CFC561027CA6E44393C582431369DD4D522AE2E7249548099352831CF8AA6A9",
+    "cuda_tf32_convolution": "49CFE583C5711831D1BA675B1539DD7CE97655BC6BC9A5EFA0B2656EDAC6C792"
+  },
+  "record_date": "2026-08-16",
+  "python": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.12.1+cu130",
+  "torch_cuda_runtime": "13.0"
+}

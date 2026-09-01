@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools==78.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "densenet-reproduction"
+version = "0.1.0"
+description = "Evidence-first reproduction of DenseNet-BC-100-12 on CIFAR-10+"
+requires-python = ">=3.12,<3.13"
+dependencies = ["torch==2.12.1"]
+
+[project.scripts]
+densenet-formal-runner = "densenet_reproduction.formal_cli:main_entry"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,139 @@
+{
+  "classification": "PHASE1-DETERMINISM-DIAGNOSTIC-ONLY",
+  "evidence_class": "DERIVED",
+  "deterministic_candidate_bit_exact": true,
+  "execution_environment": {
+    "compute_capability": "8.6",
+    "cudnn": 92000,
+    "device": "NVIDIA GeForce RTX 3070 Ti",
+    "python": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.12.1+cu130",
+    "torch_cuda_runtime": "13.0",
+    "worker_python_hash_seed": "0"
+  },
+  "fresh_processes_per_mode": 3,
+  "input_shape": [4, 3, 32, 32],
+  "input_test_seed": 27001,
+  "model_test_seed": 27000,
+  "optimizer_constructed": false,
+  "optimizer_steps": 0,
+  "record_date": "2026-08-16",
+  "runs": {
+    "ambient_defaults": [
+      {
+        "gradient_sha256": "94767F991CE2936F32F78DF3400F5862EB0552D637D707D91F0AA0AD122F0CB0",
+        "initial_state_sha256": "9D16FF7F9938C9DC52105C87C362A53960E4E6FE72DAAEB018D95FAE0DE4DFBB",
+        "logits_sha256": "8A0AD741AF3C66ECB282DE2F54668B6D2F55EB619207C945BE49D79125BF43AD",
+        "loss": 2.310762882232666,
+        "mode": "ambient_defaults",
+        "post_forward_state_sha256": "0F35E978FC70E188845382DF49E04B87C41C32355CDAD91E35D350F5F6351E96",
+        "settings": {
+          "cublas_workspace_config": null,
+          "cudnn_benchmark": false,
+          "cudnn_convolution_fp32_precision": "tf32",
+          "cudnn_deterministic": false,
+          "deterministic_algorithms": false,
+          "matmul_fp32_precision": "none",
+          "python_hash_seed": "0"
+        },
+        "trainable_gradient_tensors": 299
+      },
+      {
+        "gradient_sha256": "9741CEC3AB96AF8BDE567A2F6EA39B7C28639F9A4C066A3AE6F83721347948C5",
+        "initial_state_sha256": "9D16FF7F9938C9DC52105C87C362A53960E4E6FE72DAAEB018D95FAE0DE4DFBB",
+        "logits_sha256": "8A0AD741AF3C66ECB282DE2F54668B6D2F55EB619207C945BE49D79125BF43AD",
+        "loss": 2.310762882232666,
+        "mode": "ambient_defaults",
+        "post_forward_state_sha256": "0F35E978FC70E188845382DF49E04B87C41C32355CDAD91E35D350F5F6351E96",
+        "settings": {
+          "cublas_workspace_config": null,
+          "cudnn_benchmark": false,
+          "cudnn_convolution_fp32_precision": "tf32",
+          "cudnn_deterministic": false,
+          "deterministic_algorithms": false,
+          "matmul_fp32_precision": "none",
+          "python_hash_seed": "0"
+        },
+        "trainable_gradient_tensors": 299
+      },
+      {
+        "gradient_sha256": "9C365BA6767272FF46E960FD42490562D25364A2F1D2787352FDB5556C706661",
+        "initial_state_sha256": "9D16FF7F9938C9DC52105C87C362A53960E4E6FE72DAAEB018D95FAE0DE4DFBB",
+        "logits_sha256": "8A0AD741AF3C66ECB282DE2F54668B6D2F55EB619207C945BE49D79125BF43AD",
+        "loss": 2.310762882232666,
+        "mode": "ambient_defaults",
+        "post_forward_state_sha256": "0F35E978FC70E188845382DF49E04B87C41C32355CDAD91E35D350F5F6351E96",
+        "settings": {
+          "cublas_workspace_config": null,
+          "cudnn_benchmark": false,
+          "cudnn_convolution_fp32_precision": "tf32",
+          "cudnn_deterministic": false,
+          "deterministic_algorithms": false,
+          "matmul_fp32_precision": "none",
+          "python_hash_seed": "0"
+        },
+        "trainable_gradient_tensors": 299
+      }
+    ],
+    "deterministic_candidate": [
+      {
+        "gradient_sha256": "F012DCBBF94562CE6EEDE8EECB91C0B14F9E012AB26929AADC7106434C07F912",
+        "initial_state_sha256": "9D16FF7F9938C9DC52105C87C362A53960E4E6FE72DAAEB018D95FAE0DE4DFBB",
+        "logits_sha256": "1D3CDA00D9C71E3482006C663C27F3225650358BF2C455BE8277BD9BA91B9C7B",
+        "loss": 2.3107123374938965,
+        "mode": "deterministic_candidate",
+        "post_forward_state_sha256": "E17BEABABBCCAA6CCCA6EB3EBD858EC213486820F2B794F1ECFA6F76584F082A",
+        "settings": {
+          "cublas_workspace_config": ":4096:8",
+          "cudnn_benchmark": false,
+          "cudnn_convolution_fp32_precision": "ieee",
+          "cudnn_deterministic": false,
+          "deterministic_algorithms": true,
+          "matmul_fp32_precision": "ieee",
+          "python_hash_seed": "0"
+        },
+        "trainable_gradient_tensors": 299
+      },
+      {
+        "gradient_sha256": "F012DCBBF94562CE6EEDE8EECB91C0B14F9E012AB26929AADC7106434C07F912",
+        "initial_state_sha256": "9D16FF7F9938C9DC52105C87C362A53960E4E6FE72DAAEB018D95FAE0DE4DFBB",
+        "logits_sha256": "1D3CDA00D9C71E3482006C663C27F3225650358BF2C455BE8277BD9BA91B9C7B",
+        "loss": 2.3107123374938965,
+        "mode": "deterministic_candidate",
+        "post_forward_state_sha256": "E17BEABABBCCAA6CCCA6EB3EBD858EC213486820F2B794F1ECFA6F76584F082A",
+        "settings": {
+          "cublas_workspace_config": ":4096:8",
+          "cudnn_benchmark": false,
+          "cudnn_convolution_fp32_precision": "ieee",
+          "cudnn_deterministic": false,
+          "deterministic_algorithms": true,
+          "matmul_fp32_precision": "ieee",
+          "python_hash_seed": "0"
+        },
+        "trainable_gradient_tensors": 299
+      },
+      {
+        "gradient_sha256": "F012DCBBF94562CE6EEDE8EECB91C0B14F9E012AB26929AADC7106434C07F912",
+        "initial_state_sha256": "9D16FF7F9938C9DC52105C87C362A53960E4E6FE72DAAEB018D95FAE0DE4DFBB",
+        "logits_sha256": "1D3CDA00D9C71E3482006C663C27F3225650358BF2C455BE8277BD9BA91B9C7B",
+        "loss": 2.3107123374938965,
+        "mode": "deterministic_candidate",
+        "post_forward_state_sha256": "E17BEABABBCCAA6CCCA6EB3EBD858EC213486820F2B794F1ECFA6F76584F082A",
+        "settings": {
+          "cublas_workspace_config": ":4096:8",
+          "cudnn_benchmark": false,
+          "cudnn_convolution_fp32_precision": "ieee",
+          "cudnn_deterministic": false,
+          "deterministic_algorithms": true,
+          "matmul_fp32_precision": "ieee",
+          "python_hash_seed": "0"
+        },
+        "trainable_gradient_tensors": 299
+      }
+    ]
+  },
+  "unique_gradient_hashes": {
+    "ambient_defaults": 3,
+    "deterministic_candidate": 1
+  }
+}

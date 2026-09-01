@@ -1,0 +1,26 @@
+# Project-local Python environment and caches
+/.venv/
+__pycache__/
+*.py[cod]
+/.pytest_cache/
+/.coverage
+/htmlcov/
+*.egg-info/
+/build/
+/dist/
+
+# Reconstructable forensic source clones (identity is recorded in docs)
+/sources/
+
+# Data and generated/formal-run artifacts are governed separately
+/data/
+/checkpoints/
+/outputs/
+/runs/
+/artifacts/
+
+# Editor and OS noise
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db

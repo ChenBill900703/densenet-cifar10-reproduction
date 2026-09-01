@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "decision_id": "D-060",
+  "date": "2026-08-29",
+  "authorization_exact": "我想結束該專案了",
+  "head_before_closure": "8d1d27d9b51182ca595520934e0d08c0b718455e",
+  "lifecycle_state": "PROJECT-CLOSED-FINAL-DELIVERY-PRESERVED",
+  "scientific_freeze": {
+    "tag": "formal-freeze-densenet-bc100-12-cifar10plus-ledger-performance-corrected-2026-08-24",
+    "tag_object": "f9b2250c9769ebd2e5e58e877c77aa1c11d45cc2",
+    "peeled_target": "728c63ba8c7204e665ae0a9070ee74b67cb068d3",
+    "moved": false
+  },
+  "formal_result": {
+    "individual_error_percent": [4.66, 4.61, 4.81],
+    "mean_error_percent": "4.693333333333",
+    "sample_sd_percentage_points": "0.104083299973",
+    "paper_error_percent": "4.51",
+    "difference_percentage_points": "+0.183333333333"
+  },
+  "delivery_artifacts": [
+    {
+      "path": "DenseNet_CIFAR_Reproduction_Final.pptx",
+      "bytes": 547532,
+      "sha256": "D5E0D94D376B10CE74327AD452831A1E50315A2FAC6642C57D016CA133FAF6EA"
+    },
+    {
+      "path": "DenseNet_CIFAR_Reproduction_Plain_Language.pptx",
+      "bytes": 541117,
+      "sha256": "31A0A8C3C71739912D1475C46CEC4B410BB0E6E017ADCC6EA0B9A9F347673EAF"
+    },
+    {
+      "path": "docs/final_reproduction_report.md",
+      "sha256": "D03EDBA54A330E95806F8FC4636D9BA3EFDAF9AA12ECCA3C87DD411C237416FF"
+    },
+    {
+      "path": "docs/final_evidence_index.md",
+      "sha256": "9FA786A0E2A9B54525922CF5AEA8386D9E6D4E31D01FD39668329C6C4CE48B3E"
+    },
+    {
+      "path": "docs/professor_defense_qa.md",
+      "sha256": "F9DAA96038416AD1F17F4E723E9246B75077056E1909E834E21BA10505419400"
+    },
+    {
+      "path": "docs/presentation_script.md",
+      "sha256": "DB26795D8C2E68E606321C266346EDA1C2B66C565006C0D9528D7702CD59AA7F"
+    }
+  ],
+  "scratch_cleanup": {
+    "removed_path": "tmp/",
+    "unique_evidence_removed": false,
+    "sole_file_identity": {
+      "path": "tmp/plain-language-deck/source.pptx",
+      "bytes": 547532,
+      "sha256": "D5E0D94D376B10CE74327AD452831A1E50315A2FAC6642C57D016CA133FAF6EA",
+      "retained_identical_path": "DenseNet_CIFAR_Reproduction_Final.pptx"
+    }
+  },
+  "closure_rules": {
+    "further_work_authorized": false,
+    "formal_artifact_mutation_authorized": false,
+    "scientific_freeze_tag_movement_authorized": false,
+    "future_work_requires_separate_project": true
+  }
+}

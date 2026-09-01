@@ -1,0 +1,674 @@
+{
+  "cifar_forward": {
+    "accuracy_or_error_computations": 0,
+    "all_parameter_grads_none_after_forward": true,
+    "artifact": {
+      "bytes": 170052171,
+      "md5": "C32A1D4AB5D03F1284B67883E8D87530",
+      "path": "D:\\DenseNet \u2014 Densely Connected Convolutional Networks\\data\\raw\\cifar-10-binary.tar.gz",
+      "sha256": "C4A38C50A1BC5F3A1C5537F2155AB9D68F9F25EB1ED8D9DDDA3DB29A59BCA1DD"
+    },
+    "batches": 1,
+    "bn_counters_advanced": 99,
+    "cifar_backward_calls": 0,
+    "cifar_loss_calls": 0,
+    "cifar_optimizer_calls": 0,
+    "drop_last": false,
+    "forward_calls": 1,
+    "inputs_sha256": "D95F90DFEF92BE96A2603CF8F1E6EFDE4DE80F76A2C4A6BC0B46308A68CBEC32",
+    "logits_finite": true,
+    "logits_sha256": "E9583F52AD23FBF271ACD7A5D5DBA633867FAA9E9B2D778C0FA1DF7360F68C90",
+    "logits_shape": [
+      64,
+      10
+    ],
+    "model_state_sha256_after_forward": "063BB7B9EE9DC2D686104CE830122808F05DFE0F4710EE3719FC7F94053059C4",
+    "non_blocking_transfer": false,
+    "pin_memory": false,
+    "predictions_or_argmax": 0,
+    "request_count": 64,
+    "request_order_and_decisions_sha256": "A260DC9AB4F58EA4659F52BC207EBA173C12B6DBED9C7F4DD5A4D0F1A2D3337F",
+    "samples": 64,
+    "targets_sha256": "C751082AA3D3C66949EEEDD97F2CBCB8F8FEF2BA9B6D05A5E2DEE455CFEE01FA",
+    "validation_or_test_samples": 0,
+    "workers": 2
+  },
+  "classification": "PHASE4-EXACT-DEVICE-DIAGNOSTIC-NOT-FORMAL-RUN",
+  "disposition": "OBSERVED-FIT",
+  "evidence_class": "DERIVED",
+  "formal_reproduction_result": false,
+  "headroom_policy": "NO_AUTOMATIC_THRESHOLD_HUMAN_COMPLETION_DECISION_REQUIRED",
+  "memory_records": {
+    "worker_a_after_checkpoint_save": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_after_model": {
+      "allocated_bytes": 3362816,
+      "free_bytes": 7403995136,
+      "peak_allocated_bytes": 3362816,
+      "peak_reserved_bytes": 4194304,
+      "reserved_bytes": 4194304,
+      "total_bytes": 8589410304
+    },
+    "worker_a_before_model": {
+      "allocated_bytes": 0,
+      "free_bytes": 7435452416,
+      "peak_allocated_bytes": 0,
+      "peak_reserved_bytes": 0,
+      "reserved_bytes": 0,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_01_backward": {
+      "allocated_bytes": 74419200,
+      "free_bytes": 4656726016,
+      "peak_allocated_bytes": 2328818688,
+      "peak_reserved_bytes": 2675965952,
+      "reserved_bytes": 2675965952,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_01_batch": {
+      "allocated_bytes": 4149760,
+      "free_bytes": 7403995136,
+      "peak_allocated_bytes": 4149760,
+      "peak_reserved_bytes": 4194304,
+      "reserved_bytes": 4194304,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_01_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4656726016,
+      "peak_allocated_bytes": 77574144,
+      "peak_reserved_bytes": 2675965952,
+      "reserved_bytes": 2675965952,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_01_forward": {
+      "allocated_bytes": 2284129792,
+      "free_bytes": 5030019072,
+      "peak_allocated_bytes": 2284129792,
+      "peak_reserved_bytes": 2342518784,
+      "reserved_bytes": 2342518784,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_01_optimizer_update": {
+      "allocated_bytes": 77576704,
+      "free_bytes": 4656726016,
+      "peak_allocated_bytes": 2328818688,
+      "peak_reserved_bytes": 2675965952,
+      "reserved_bytes": 2675965952,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_02_backward": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_02_batch": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4656726016,
+      "peak_allocated_bytes": 78361088,
+      "peak_reserved_bytes": 2675965952,
+      "reserved_bytes": 2675965952,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_02_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_02_forward": {
+      "allocated_bytes": 2325102080,
+      "free_bytes": 4654628864,
+      "peak_allocated_bytes": 2325102080,
+      "peak_reserved_bytes": 2678063104,
+      "reserved_bytes": 2678063104,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_02_optimizer_update": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_03_backward": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_03_batch": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_03_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_03_forward": {
+      "allocated_bytes": 2325102080,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_03_optimizer_update": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_04_backward": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_04_batch": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_04_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_04_forward": {
+      "allocated_bytes": 2325102080,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_04_optimizer_update": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_05_backward": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_05_batch": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_05_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_05_forward": {
+      "allocated_bytes": 2325102080,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_05_optimizer_update": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_06_backward": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_06_batch": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_06_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_06_forward": {
+      "allocated_bytes": 2325102080,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_06_optimizer_update": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_07_backward": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_07_batch": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_07_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_07_forward": {
+      "allocated_bytes": 2325102080,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_07_optimizer_update": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_08_backward": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_08_batch": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_08_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_08_forward": {
+      "allocated_bytes": 2325102080,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_08_optimizer_update": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_09_backward": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_09_batch": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_09_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_09_forward": {
+      "allocated_bytes": 2325102080,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_09_optimizer_update": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_10_backward": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_10_batch": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_10_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_10_forward": {
+      "allocated_bytes": 2325102080,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_10_optimizer_update": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_11_backward": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_11_batch": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_11_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_11_forward": {
+      "allocated_bytes": 2325102080,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_a_call_11_optimizer_update": {
+      "allocated_bytes": 77577216,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_b_after_checkpoint_reload": {
+      "allocated_bytes": 6520320,
+      "free_bytes": 7399800832,
+      "peak_allocated_bytes": 6520320,
+      "peak_reserved_bytes": 8388608,
+      "reserved_bytes": 8388608,
+      "total_bytes": 8589410304
+    },
+    "worker_b_after_model": {
+      "allocated_bytes": 3362816,
+      "free_bytes": 7403995136,
+      "peak_allocated_bytes": 3362816,
+      "peak_reserved_bytes": 4194304,
+      "reserved_bytes": 4194304,
+      "total_bytes": 8589410304
+    },
+    "worker_b_before_model": {
+      "allocated_bytes": 0,
+      "free_bytes": 7435452416,
+      "peak_allocated_bytes": 0,
+      "peak_reserved_bytes": 0,
+      "reserved_bytes": 0,
+      "total_bytes": 8589410304
+    },
+    "worker_b_call_07_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2331976192,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_b_call_08_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_b_call_09_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_b_call_10_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    },
+    "worker_b_call_11_complete": {
+      "allocated_bytes": 77574144,
+      "free_bytes": 4652531712,
+      "peak_allocated_bytes": 2336236544,
+      "peak_reserved_bytes": 2680160256,
+      "reserved_bytes": 2680160256,
+      "total_bytes": 8589410304
+    }
+  },
+  "provenance": {
+    "dataset_sha256": "C4A38C50A1BC5F3A1C5537F2155AB9D68F9F25EB1ED8D9DDDA3DB29A59BCA1DD",
+    "environment_lock_sha256": "C65D2C940A4A26C9C86BBB05859DD2405C3C351672720AB0E71D9572944722FC",
+    "phase4_config_sha256": "8BE9E997ABC2ED18F151DEE304F20374E8E6266158559A412CA07C9ADD7567FA",
+    "source_commit": "f91cdf6ee5e8fafd20148af3313b3a56a16e6747"
+  },
+  "record_date": "2026-08-23",
+  "replay": {
+    "checkpoint_identity_bit_exact": true,
+    "loss_suffix_bit_exact": true,
+    "model_state_bit_exact": true,
+    "optimizer_state_bit_exact": true,
+    "rng_state_at_checkpoint_bit_exact": true,
+    "step_ledger_bit_exact": true
+  },
+  "runtime": {
+    "amp_used": false,
+    "compile_used": false,
+    "compute_capability": [
+      8,
+      6
+    ],
+    "cublas_workspace_config": ":4096:8",
+    "cuda": "13.0",
+    "cudnn": 92000,
+    "cudnn_benchmark": false,
+    "cudnn_convolution_fp32_precision": "ieee",
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "driver_model": "WDDM",
+    "driver_version": "591.86",
+    "gpu_name": "NVIDIA GeForce RTX 3070 Ti",
+    "gpu_total_memory_bytes": 8589410304,
+    "gpu_uuid": "GPU-9f68fb0f-9bd0-a95c-d16e-8362b9d59e2e",
+    "gradient_accumulation_used": false,
+    "matmul_fp32_precision": "ieee",
+    "nvidia_smi_name": "NVIDIA GeForce RTX 3070 Ti",
+    "nvidia_smi_uuid": "GPU-9f68fb0f-9bd0-a95c-d16e-8362b9d59e2e",
+    "python": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+    "pythonhashseed": "0",
+    "recomputation_used": false,
+    "torch": "2.12.1+cu130"
+  },
+  "scope": {
+    "accuracy_or_error_computations": 0,
+    "cifar_backward_calls": 0,
+    "cifar_forward_calls": 1,
+    "cifar_loss_calls": 0,
+    "cifar_optimizer_calls": 0,
+    "cifar_samples_read": 64,
+    "formal_optimizer_steps": 0,
+    "predictions_or_argmax": 0,
+    "pretrained_downloads": 0,
+    "synthetic_optimizer_calls": 16,
+    "validation_or_test_samples": 0
+  },
+  "synthetic": {
+    "batch_seeds": {
+      "1": 1187118010755051788,
+      "10": 4669765521936998721,
+      "11": 9030894565289816777,
+      "2": 2056402511636093070,
+      "3": 602622017504809067,
+      "4": 6854809117584681188,
+      "5": 6759546632467950060,
+      "6": 4026598036464593312,
+      "7": 3965047207277558030,
+      "8": 5294591227242595029,
+      "9": 1348254515402102719
+    },
+    "checkpoint_sha256": "85D68BE96925D87B2196B97C97044A18383836436C5DDCA8A68042E4EE8A87D0",
+    "final_model_state_sha256": "23EF725FBFADF3376CB8222397BB47F0C1AFDB376A5E9C127F39A4066363ED0C",
+    "final_optimizer_state_sha256": "6E0964ECA0499151EF2BB822FE43269D67E931C97C13E2ADA6A820BE765AE529",
+    "generated_kernel_projection_seconds_excluding_dataloader_evaluation_checkpoint_and_contention": 71645.803068385,
+    "gradient_tensors": 299,
+    "measured_calls": 10,
+    "measured_update_seconds": [
+      0.3088719000807032,
+      0.2938872999511659,
+      0.29817570000886917,
+      0.30556250002700835,
+      0.2913320999359712,
+      0.3437653000000864,
+      0.29738250002264977,
+      0.2999485000036657,
+      0.3112204000353813,
+      0.3038095999509096
+    ],
+    "momentum_state_tensors": 299,
+    "paper_derived_updates": 234600,
+    "physical_batch_size": 64,
+    "timing_includes_required_stage_memory_instrumentation": true,
+    "timing_summary_seconds": {
+      "arithmetic_mean": 0.3053955800016411,
+      "maximum": 0.3437653000000864,
+      "median": 0.30187904997728765,
+      "minimum": 0.2913320999359712
+    },
+    "total_calls": 16,
+    "warmup_calls": 1,
+    "worker_a_calls": 11,
+    "worker_b_calls": 5
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "classification": "PHASE6-PREFLIGHT-ACL-CORRECTIVE-REPORT-V1",
+  "evidence_class": "DERIVED",
+  "target": "D:\\DenseNet — Densely Connected Convolutional Networks\\data\\prepared\\cifar-10-batches-bin",
+  "owner_context_account": "<REDACTED_SANDBOX_ACCOUNT>",
+  "owner_context_sid": "<REDACTED_SANDBOX_SID>",
+  "grantee_account": "<REDACTED_EXECUTION_ACCOUNT>",
+  "grantee_sid": "<REDACTED_EXECUTION_SID>",
+  "grant": "(OI)(CI)(RX)",
+  "initial_icacls_inheritance_drift_detected": true,
+  "failure_snapshot_preserved": true,
+  "inheritance_drift_restored_to_before_state": true,
+  "owner_unchanged": true,
+  "inheritance_protection_unchanged_from_before": true,
+  "non_target_aces_unchanged": true,
+  "data_bytes_sha256_unchanged": true,
+  "write_modify_delete_ownership_acl_change_granted": false,
+  "formal_optimizer_calls": 0
+}

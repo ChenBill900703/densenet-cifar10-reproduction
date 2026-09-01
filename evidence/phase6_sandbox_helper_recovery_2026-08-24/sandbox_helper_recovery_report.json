@@ -1,0 +1,18 @@
+{
+    "schema":  "densenet.phase6-sandbox-helper-recovery-report.v1",
+    "status":  "PASS",
+    "completed_utc":  "2026-08-24T06:28:25.8355802Z",
+    "authorization":  "Codex sandbox helper recovery v1",
+    "expected_head":  "c29a10369600a15633581a2ef41e898548db9904",
+    "target_account":  "<REDACTED_EXECUTION_ACCOUNT>",
+    "target_sid":  "<REDACTED_EXECUTION_SID>",
+    "granted_rights":  "WRITE_DAC/ChangePermissions",
+    "owner_unchanged":  true,
+    "group_unchanged":  true,
+    "inheritance_unchanged":  true,
+    "non_target_aces_unchanged":  true,
+    "git_and_tracked_bytes_unchanged":  true,
+    "git_state_unchanged":  true,
+    "before_sha256":  "78FEE8CC78B400B700F8864868CE1AB1B51A4BEBBADE9FAED0482B5C008951DA",
+    "after_sha256":  "02A558E998F721F901C08ED6EE03D4C5885DE3102D644B067B286C43A0F943C9"
+}

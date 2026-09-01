@@ -1,0 +1,57 @@
+{
+  "classification": "NON-FORMAL-SYNTHETIC-OPTIMIZER-MECHANICS",
+  "evidence_class": "DERIVED",
+  "provenance": {
+    "candidate_config_sha256": "058AC8F5B63A8406730C555EA06ACBCBB922F781829144A3576AA36333368518",
+    "dataset_sha256_recorded_only_not_read": "C4A38C50A1BC5F3A1C5537F2155AB9D68F9F25EB1ED8D9DDDA3DB29A59BCA1DD",
+    "environment_lock_sha256": "C65D2C940A4A26C9C86BBB05859DD2405C3C351672720AB0E71D9572944722FC",
+    "source_commit": "c890b2c7e94bdf50af54c075887379a2c5394643"
+  },
+  "record_date": "2026-08-23",
+  "replay": {
+    "checkpoint_completed_epoch": 1,
+    "checkpoint_next_epoch": 2,
+    "checkpoint_sha256": "3FDE8FE1CF2952F675BD33682984E931F9F0293A0F5E290EAFCCE497F1B5CFB6",
+    "final_model_state_sha256": "6A822592F6666F7F587C2BE94A782B96152AF47AD1A7E26FAF2DEE864723ECB9",
+    "losses_bit_exact": true,
+    "model_state_bit_exact": true,
+    "optimizer_state_bit_exact": true
+  },
+  "rng": {
+    "master_seed": 1021082110,
+    "model_init_seed": 3170010046903925536,
+    "policy": "sha256-domain-separated-runtime-v1",
+    "python_runtime_seed": 5704425582419630177,
+    "torch_cpu_runtime_seed": 5078439397396686380,
+    "torch_cuda_runtime_seed": 4421535887789089552
+  },
+  "runtime": {
+    "amp_used": false,
+    "compile_used": false,
+    "compute_capability": [
+      8,
+      6
+    ],
+    "cublas_workspace_config": ":4096:8",
+    "cuda": "13.0",
+    "cudnn": 92000,
+    "cudnn_benchmark": false,
+    "cudnn_convolution_fp32_precision": "ieee",
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "device": "NVIDIA GeForce RTX 3070 Ti",
+    "matmul_fp32_precision": "ieee",
+    "recomputation_used": false,
+    "runtime_rngs_initialized_from_approved_bundle": true,
+    "torch": "2.12.1+cu130"
+  },
+  "scope": {
+    "accuracy_computations": 0,
+    "cifar_samples_read": 0,
+    "formal_optimizer_steps": 0,
+    "predictions_computed": 0,
+    "pretrained_downloads": 0,
+    "synthetic_optimizer_calls_executed": 5,
+    "synthetic_steps_per_compared_trajectory": 3
+  }
+}
